@@ -80,6 +80,7 @@ test('l possibilities', () => {
       'kl',
       'Ml',
       'Gl',
+      'hL',
       'm3',
       'km3',
       'krm',
@@ -96,8 +97,9 @@ test('l possibilities', () => {
       'pnt',
       'qt',
       'gal',
+      'bbl',
       'ft3',
-      'yd3',
+      'yd3'
     ];
   expect(actual.sort()).toEqual(expected.sort());
 });
@@ -181,6 +183,7 @@ test('volume possibilities', () => {
       'kl',
       'Ml',
       'Gl',
+      'hL',
       'm3',
       'km3',
       'krm',
@@ -197,6 +200,7 @@ test('volume possibilities', () => {
       'pnt',
       'qt',
       'gal',
+      'bbl',
       'ft3',
       'yd3',
     ];
@@ -540,6 +544,7 @@ test('all possibilities', () => {
       'arcmin',
       'arcsec',
       'B',
+      'bbl',
       'Btu/s',
       'C',
       'F',
@@ -608,6 +613,7 @@ test('all possibilities', () => {
       'h',
       'hPa',
       'ha',
+      'hL',
       'hp',
       'Hz',
       'in',

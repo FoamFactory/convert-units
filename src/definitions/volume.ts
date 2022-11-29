@@ -8,6 +8,7 @@ export type VolumeMetricUnits =
   | 'ml'
   | 'l'
   | 'kl'
+  | 'hL'
   | 'Ml'
   | 'Gl'
   | 'm3'
@@ -30,6 +31,7 @@ export type VolumeImperialUnits =
   | 'pnt'
   | 'qt'
   | 'gal'
+  | 'bbl'
   | 'ft3'
   | 'yd3';
 
@@ -82,6 +84,13 @@ const metric: Record<VolumeMetricUnits, Unit> = {
       plural: 'Kilolitres',
     },
     to_anchor: 1000,
+  },
+  hL: {
+    name: {
+      singular: 'Hectolitre',
+      plural: 'Hectolitres'
+    },
+    to_anchor: 100
   },
   Ml: {
     name: {
@@ -213,6 +222,13 @@ const imperial: Record<VolumeImperialUnits, Unit> = {
       plural: 'Gallons',
     },
     to_anchor: 128,
+  },
+  bbl: {
+    name: {
+      singular: 'barrel',
+      plural: 'barrels'
+    },
+    to_anchor: 3968
   },
   ft3: {
     name: {
