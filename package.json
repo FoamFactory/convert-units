@@ -1,7 +1,7 @@
 {
-  "name": "convert-units",
-  "version": "3.0.0-beta.5",
-  "description": "Convert between quantities in different units",
+  "name": "@foamfactoryio/convert-units",
+  "version": "3.0.0-beta.6",
+  "description": "Convert between quantities in different units. Updated with brewers units.",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
   "types": "index.d.ts",
@@ -59,7 +59,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/convert-units/convert-units.git"
+    "url": "git://github.com/FoamFactory/convert-units.git"
   },
   "keywords": [
     "metric",
@@ -68,6 +68,17 @@
     "ratio",
     "fraction"
   ],
-  "author": "Ben Ng <me@benng.me> (http://benng.me)",
+  "contributors": [
+    {
+      "name": "Ben Ng",
+      "email": "me@benng.me",
+      "url": "https://benng.me"
+    },
+    {
+      "name": "Scott Johnson",
+      "email": "scott@foamfactory.io",
+      "url": "https://www.foamfactory.io"
+    }
+  ],
   "license": "MIT"
 }
