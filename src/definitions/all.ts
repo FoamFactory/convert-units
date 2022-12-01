@@ -16,6 +16,10 @@ import each, { EachSystems, EachUnits } from './each.js';
 import energy, { EnergySystems, EnergyUnits } from './energy.js';
 import force, { ForceSystems, ForceUnits } from './force.js';
 import frequency, { FrequencySystems, FrequencyUnits } from './frequency.js';
+import gravity, {
+  GravitySystems,
+  GravityUnits,
+} from './gravity.js';
 import illuminance, {
   IlluminanceSystems,
   IlluminanceUnits,
@@ -64,6 +68,7 @@ export type AllMeasuresSystems =
   | EnergySystems
   | ForceSystems
   | FrequencySystems
+  | GravitySystems
   | IlluminanceSystems
   | LengthSystems
   | MassSystems
@@ -94,6 +99,7 @@ export type AllMeasuresUnits =
   | EnergyUnits
   | ForceUnits
   | FrequencyUnits
+  | GravityUnits
   | IlluminanceUnits
   | LengthUnits
   | MassUnits
@@ -124,6 +130,7 @@ export type AllMeasures =
   | 'energy'
   | 'force'
   | 'frequency'
+  | 'gravity'
   | 'illuminance'
   | 'length'
   | 'mass'
@@ -157,6 +164,7 @@ const allMeasures: Record<
   energy,
   force,
   frequency,
+  gravity,
   illuminance,
   length,
   mass,

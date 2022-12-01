@@ -23,6 +23,10 @@ import frequency, {
   FrequencySystems,
   FrequencyUnits,
 } from '../definitions/frequency';
+import gravity, {
+  GravitySystems,
+  GravityUnits,
+} from '../definitions/gravity';
 import illuminance, {
   IlluminanceSystems,
   IlluminanceUnits,
@@ -546,6 +550,7 @@ test('all possibilities', () => {
       'B',
       'bbl',
       'Btu/s',
+      'Bx',
       'C',
       'F',
       'R',
@@ -558,6 +563,7 @@ test('all possibilities', () => {
       'MPa',
       'Mb',
       'N',
+      'P',
       'Pa',
       'TB',
       'Tb',
@@ -736,6 +742,7 @@ test('all possibilities', () => {
       's',
       's/m',
       's/ft',
+      'sg',
       't',
       'Tbs',
       'Tbs/s',
@@ -797,6 +804,19 @@ test('pieces possibilities', () => {
       'scores',
       'sm-gr',
       'trio',
+    ];
+  expect(actual.sort()).toEqual(expected.sort());
+});
+
+test('gravity possibilities', () => {
+  const convert = configureMeasurements<'gravity', GravitySystems, GravityUnits>({
+    gravity,
+  });
+  const actual = convert().possibilities('gravity'),
+    expected = [
+      'Bx',
+      'P',
+      'sg'
     ];
   expect(actual.sort()).toEqual(expected.sort());
 });

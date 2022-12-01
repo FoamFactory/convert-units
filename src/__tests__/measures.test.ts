@@ -24,6 +24,7 @@ test('measures', () => {
       'energy',
       'force',
       'frequency',
+      'gravity',
       'illuminance',
       'length',
       'mass',
