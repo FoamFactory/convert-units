@@ -1,20 +1,15 @@
 convert-units
 =============
 
-[![Downloads](https://img.shields.io/npm/dm/convert-units.svg)](https://www.npmjs.com/package/convert-units)
+[![Downloads](https://img.shields.io/npm/dm/@foamfactoryio/convert-units)](https://www.npmjs.com/package/@foamfactoryio/convert-units)
 
-A handy utility for converting between quantities in different units.
+A handy utility for converting between quantities in different units, updated with units useful to brewers.
 
 Installation
 -----
 
 ```bash
-npm install convert-units --save
-```
-
-```bash
-# beta builds are also available with
-npm install convert-units@beta --save
+npm install @foamfactoryio/convert-units --save
 ```
 
 Usage
@@ -772,7 +767,7 @@ Migrating from v2 to v3+
 -----------------------
 
 This only applies if moving from `<=2.3.4` to `>=3.x`.
- 
+
 `index.js`
 ```js
 import convert from 'convert-units';
@@ -794,7 +789,7 @@ convert(1).from('m').to('ft');
 `convert.js`
 ```js
 import configureMeasurements from 'convert-units';
-import allMeasures from 'convert-units/definitions/all';  
+import allMeasures from 'convert-units/definitions/all';
 
 export default configureMeasurements(allMeasures);
 ```
@@ -1198,7 +1193,7 @@ Packaged Units
 * doz-doz
 * doz
 * gr-gr
-* gros 
+* gros
 * half-dozen
 * long-hundred
 * ream
